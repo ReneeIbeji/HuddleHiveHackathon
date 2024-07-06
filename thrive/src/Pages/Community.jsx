@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from '../Components/Navbar.jsx';
 
 const Community = () => {
   const [challenges, setChallenges] = useState([]);
@@ -52,7 +53,7 @@ const Community = () => {
   };
 
   return (
-    <div>
+    <><Navbar /><div>
       <h1>Community Challenges</h1>
       <form onSubmit={(e) => {
         e.preventDefault();
@@ -61,7 +62,7 @@ const Community = () => {
           addChallenge(text);
           e.target.elements.challengeText.value = '';
         }
-      }}>
+      } }>
         <input type="text" name="challengeText" placeholder="Enter your challenge" />
         <button type="submit">Create Challenge</button>
       </form>
@@ -91,7 +92,7 @@ const Community = () => {
           )}
         </div>
       ))}
-    </div>
+    </div></>
   );
 };
 
