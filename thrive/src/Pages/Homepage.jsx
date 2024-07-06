@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./Homepage.module.css"
+import Navbar from '../Components/Navbar.jsx';
+
 
 function Homepage() {
 
@@ -21,11 +23,10 @@ function Homepage() {
 
 
   return(
-    <div>
-      <div>
-        <h1>Your streak</h1>
-      </div>
-      <div className={styles.homepageContainer}>
+      <><Navbar /><div>
+        <div>
+      <h1>Your streak</h1>
+    </div><div className={styles.homepageContainer}>
         <h1>Your Goals</h1>
         <ul>
           {goals.map((goal, index) => (
@@ -40,12 +41,11 @@ function Homepage() {
             value={newGoal}
             onChange={(e) => setNewGoal(e.target.value)}
             placeholder="Add a new goal"
-            className={styles.input}
-          />
+            className={styles.input} />
           <button onClick={addGoal} className={styles.addButton}>Add Goal</button>
         </div>
       </div>
-    </div>
+    </div></>
   );
 }
 

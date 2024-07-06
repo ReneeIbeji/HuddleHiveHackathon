@@ -1,7 +1,12 @@
+import Navbar from '../Components/Navbar.jsx';
+
 function Goals() {
 
   return(
-    <hi>Addgoal</hi>
+    <div>
+      <Navbar />
+      <hi>Addgoal</hi>
+    </div>
   )
 }
 
