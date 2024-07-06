@@ -1,0 +1,15 @@
+.component-button {
+    background-color: white;
+    border: none;
+    width: 20em;
+    height: 5em;
+    margin: 2em;
+}
+
+.green {
+    background-color:#A3D9A5;
+}
+
+.red {
+    background-color: #EFC6F3;
+}
