@@ -1,5 +1,9 @@
 .component-button {
     background-color: white;
+    border: none;
+    width: 20em;
+    height: 5em;
+    margin: 2em;
 }
 
 .green {
