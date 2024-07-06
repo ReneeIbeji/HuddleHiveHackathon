@@ -7,7 +7,7 @@ export default class homepage extends React.Component{
         return(
             <html>
                 <Apptitle></Apptitle>
-                <Button name="Login"></Button>
+                <Button name="Login" orange></Button>
                 <Button name="Register"></Button>
                 
             </html>
