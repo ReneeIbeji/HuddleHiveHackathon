@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./button.css"
+import { Link } from "react-router-dom"
 
 export default class Button extends React.Component {
   static propTypes = {
@@ -21,10 +22,19 @@ export default class Button extends React.Component {
       this.props.name == "Register" ? "red" : "",
     ];
 
+    const link = [
+      this.props.name == "Login" ?  <Link  to="/home"> + this.props.name + </Link> : "",
+    ] 
+    if (this.props.name == "Login"){
+      return (
+        <Link to="/home"><button class={className.join(" ").trim()}> {this.props.name}</button></Link>
+      );
+    }
+
+
     return (
-      <div>
-        <button class={className.join(" ").trim()} /* </div>onClick={this.handleClick}*/>{this.props.name}</button>
-      </div>
+      <button class={className.join(" ").trim()}>{this.props.name}</button>
     );
+
   }
 } 
