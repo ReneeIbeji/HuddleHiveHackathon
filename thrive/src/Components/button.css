@@ -1,8 +1,11 @@
-div {
+.component-button {
     background-color: white;
 }
 
-div .login {
+.green {
     background-color:#A3D9A5;
-    ;
+}
+
+.red {
+    background-color: #EFC6F3;
 }

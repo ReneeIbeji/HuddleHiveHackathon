@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-import 'button.css'
+import "./button.css"
 
 export default class Button extends React.Component {
   static propTypes = {
@@ -18,13 +17,14 @@ export default class Button extends React.Component {
   render() {
     const className = [
       "component-button",
-      this.props.name == "Login" ? "red" : "",
+      this.props.name == "Login" ? "green" : "",
+      this.props.name == "Register" ? "red" : "",
     ];
 
     return (
-      <div className={className.join(" ").trim()}>
-        <button onClick={this.handleClick}>{this.props.name}</button>
+      <div>
+        <button class={className.join(" ").trim()} onClick={this.handleClick}>{this.props.name}</button>
       </div>
     );
   }
-}
+} 
