@@ -8,6 +8,10 @@
 
  That's where Thrive Tribe comes in. Thrive Tribe provides users with a virtual specialised community of individuals with common goals, making it easier and more enjoyable to stay on track each day. With gamified features such as a leaderboard and automated encouraging or celebratory messages (depending on where the individual is with their progress), Thrive Tribe also rewards engagement helping the communities truly thrive.
 
+## Design
+
+Link to Figma: https://www.figma.com/design/eQWLi3sDyJg2AGnVdgOpnz/Support-Hub?node-id=0-1&t=iedH7G0UcHIZUwsT-1
+
 ## Tech Stack
 
  Our prototype used simple yet sophisticated technologies, with HTML and CSS for the front-end and ReactJS for both front and back-end. Ideally, we would also use NodeJS for back-end and MongoDB for the database.
