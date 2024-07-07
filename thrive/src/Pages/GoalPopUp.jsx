@@ -14,7 +14,7 @@ export default class GoalsPopUp extends React.Component {
                         <select name="Choose a catagory">
                             <option value="Exercise goal">Exercise goal</option>
                             <option value="Productivity goal">Productivity goal</option>
-                            <option value="Work goal">Work goal</option>
+                            <option value="Study goal">Work goal</option>
                         </select>
                     </p>
                     <p>
@@ -26,9 +26,9 @@ export default class GoalsPopUp extends React.Component {
                     <p>
 
                         <select name="Your community">
-                            <option value="Exercise goal">Exercise goal</option>
-                            <option value="Productivity goal">Productivity goal</option>
-                            <option value="Work goal">Work goal</option>
+                            <option value="Exercise community">Exercise goal</option>
+                            <option value="Productivity community">Productivity goal</option>
+                            <option value="Study community">Work goal</option>
                         </select>
                     </p>
                     <p>Add a goal to gain access to this community</p>
