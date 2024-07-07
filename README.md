@@ -1,4 +1,4 @@
-<img src="[https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif](https://github.com/ReneeIbeji/ThriveTribe/blob/main/thrive/public/Assets/Screenshot%202024-07-07%20at%2012.14.07.png)">
+<img src="https://github.com/ReneeIbeji/ThriveTribe/blob/main/thrive/public/Assets/Screenshot%202024-07-07%20at%2012.14.07.png">
 
 
 ## Who are we?
