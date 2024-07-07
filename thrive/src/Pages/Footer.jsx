@@ -7,7 +7,8 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/millennia-severino" target="_blank" rel="noopener noreferrer"> Millennia</a>,
         <a href="https://www.linkedin.com/in/zeinabwarsama/" target="_blank" rel="noopener noreferrer"> Zeinab</a>,
         <a href="https://www.linkedin.com/in/reneeibeji/" target="_blank" rel="noopener noreferrer"> Renee</a>
-        {/* <a href="https://www.linkedin.com/in/name3" target="_blank" rel="noopener noreferrer"> Name3</a> */}
+        <a href="https://www.linkedin.com/in/anatolia-winter/" target="_blank" rel="noopener noreferrer"> Ana</a>
+        <a href="https://www.linkedin.com/in/emmanuellaunuode/" target="_blank" rel="noopener noreferrer"> Emma</a>
       </p>
     </footer>
   );
