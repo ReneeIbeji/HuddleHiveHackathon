@@ -6,10 +6,9 @@ import Navbar from '../Components/Navbar.jsx';
 function Homepage() {
 
   const [goals, setGoals] = useState([
-    'Tidy room',
-    'Go for a run',
-    'Read a book a week',
-    'Stretching daily'
+    'Daily stretches',
+    '15 mins meditation',
+    '10k steps a day'
   ]);
 
   const [newGoal, setNewGoal] = useState('');
@@ -21,17 +20,23 @@ function Homepage() {
     }
   };
 
-
   return(
-      <><Navbar /><div>
-        <div>
-      <h1>Your streak</h1>
-    </div><div className={styles.homepageContainer}>
-        <h1>Your Goals</h1>
-        <ul>
+      <><Navbar /><div className={styles.container}>
+        <div className={styles.header}>
+      <div>
+        <p>🥳 Good job for keeping your streak,
+        look at you go! </p>
+        <h1>Your streak</h1>
+      </div>
+      <div>
+        <p>10 days</p>
+      </div>
+      </div><div className={styles.homepageContainer}>
+        <h1>Your goals</h1>
+        <ul className={styles.ul}>
           {goals.map((goal, index) => (
             <div key={index} className={styles.listContainer}>
-              <li>{goal}</li>
+              <li>✅{goal}</li>
             </div>
           ))}
         </ul>
@@ -48,5 +53,4 @@ function Homepage() {
     </div></>
   );
 }
-
 export default Homepage;
