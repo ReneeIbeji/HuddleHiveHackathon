@@ -10,3 +10,27 @@ body {
     background-color: #F1EFE7;
     font-family: "League Spartan", sans-serif;
 }
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  margin-left: 0.5rem;
+  color: #0073b1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
