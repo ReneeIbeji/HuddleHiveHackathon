@@ -16,8 +16,6 @@ The [project codebase](https://github.com/ReneeIbeji/HuddleHiveHackathon) was co
 
 | Language | % of Codebase |
 
-| - | - |
-
 | JavaScript | 72.9 |
 
 | CSS | 15 |
