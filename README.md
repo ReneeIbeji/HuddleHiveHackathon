@@ -1,3 +1,6 @@
+<img src="[https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif](https://github.com/ReneeIbeji/ThriveTribe/blob/main/thrive/public/Assets/Screenshot%202024-07-07%20at%2012.14.07.png)">
+
+
 ## Who are we?
 
  We are Pink Bees, the team behind Thrive Tribe. We're a mix of developers, designers and product managers. Our product manager Emma, leads the team helping us stay on track. Our resident designer Ana was responsible for designing the UI, from the application screens to accessibility concerns. The developers, Renee, Zeinab and Millie worked tirelessly to code a prototype of our wonderful application.
