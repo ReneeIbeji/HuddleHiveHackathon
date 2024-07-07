@@ -5,6 +5,7 @@ import Homepage from './Pages/Homepage.jsx';
 import Goals from './Pages/Goals.jsx';
 import Community from './Pages/Community.jsx';
 import Login from './Pages/Login/Login.js';
+import Footer from './Pages/Footer.jsx'; 
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/goals" element={< Goals/>}/>
           <Route path="/community" element={< Community/>}/>
         </Routes>
+        <Footer /> {/* Add the Footer component */}
       </Router>
     </div>
   );
