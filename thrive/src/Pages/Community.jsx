@@ -91,44 +91,46 @@ const Community = () => {
         </div>
         <p>✨  7 sparks | Send a spark</p>
       </div>
-      <h2>Community Challenges</h2>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        const text = e.target.elements.challengeText.value;
-        if (text) {
-          addChallenge(text);
-          e.target.elements.challengeText.value = '';
-        }
-      } }>
-        <input type="text" name="challengeText" placeholder="Enter your challenge" />
-        <button type="submit">Create Challenge</button>
-      </form>
-      {challenges.map((challenge) => (
-        <div key={challenge.id} style={{ border: '1px solid black', margin: '10px', padding: '10px' }}>
-          <p>{challenge.text}</p>
-          {/* Emoji Reactions */}
-          <div className="react-button-container">
-            <button>
-              {challenge.userReacted ? challenge.userEmoji : 'React'}
-            </button>
-            <div className="emoji-options">
-              {emojiOptions.map((emoji) => (
-                <button key={emoji} onClick={() => reactToChallenge(challenge.id, emoji)}>
-                  {emoji} {challenge.reactions[emoji]}
-                </button>
-              ))}
+      <div id="challenges">
+        <h2>Community Challenges</h2>
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          const text = e.target.elements.challengeText.value;
+          if (text) {
+            addChallenge(text);
+            e.target.elements.challengeText.value = '';
+          }
+        } }>
+          <input type="text" name="challengeText" placeholder="Enter your challenge" />
+          <button type="submit">Create Challenge</button>
+        </form>
+        {challenges.map((challenge) => (
+          <div key={challenge.id} style={{ border: '1px solid black', margin: '10px', padding: '10px' }}>
+            <p>{challenge.text}</p>
+            {/* Emoji Reactions */}
+            <div className="react-button-container">
+              <button>
+                {challenge.userReacted ? challenge.userEmoji : 'React'}
+              </button>
+              <div className="emoji-options">
+                {emojiOptions.map((emoji) => (
+                  <button key={emoji} onClick={() => reactToChallenge(challenge.id, emoji)}>
+                    {emoji} {challenge.reactions[emoji]}
+                  </button>
+                ))}
+              </div>
             </div>
+            {/* Join Challenge */}
+            {!challenge.joined ? (
+              <button onClick={() => joinChallenge(challenge.id)}>
+                Join Challenge ({challenge.joinedUsers})
+              </button>
+            ) : (
+              <span> 🎉 Joined ({challenge.joinedUsers})</span>
+            )}
           </div>
-          {/* Join Challenge */}
-          {!challenge.joined ? (
-            <button onClick={() => joinChallenge(challenge.id)}>
-              Join Challenge ({challenge.joinedUsers})
-            </button>
-          ) : (
-            <span> 🎉 Joined ({challenge.joinedUsers})</span>
-          )}
-        </div>
-      ))}
+        ))}
+      </div>
     </div></>
   );
 };
