@@ -1,0 +1,22 @@
+.GoalPopUp {
+    margin: 2em 10vw;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    align-items: center;
+    justify-items: center;
+}
+
+
+p {
+    text-align: center;
+    margin: 10rem, 0;
+}
+input {
+    width: 20rem;
+}
+
+select {
+    width: 20rem; 
+}

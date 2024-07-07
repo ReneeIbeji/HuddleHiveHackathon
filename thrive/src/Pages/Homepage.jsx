@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./Homepage.module.css"
 import Navbar from '../Components/Navbar.jsx';
+import { Link } from "react-router-dom"
 
 
 function Homepage() {
@@ -41,13 +42,7 @@ function Homepage() {
           ))}
         </ul>
         <div className={styles.inputContainer}>
-          <input
-            type="text"
-            value={newGoal}
-            onChange={(e) => setNewGoal(e.target.value)}
-            placeholder="Add a new goal"
-            className={styles.input} />
-          <button onClick={addGoal} className={styles.addButton}>Add Goal</button>
+          <Link to="/newGoal"><button className={styles.addButton}>Add Goal</button></Link>
         </div>
       </div>
     </div></>
