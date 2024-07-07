@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../Components/Navbar.jsx';
+import TextBox from '../Components/textBox.jsx';
+import "../CSS/CommunityPage.css";
 
 const Community = () => {
   const [challenges, setChallenges] = useState([]);
@@ -53,8 +55,43 @@ const Community = () => {
   };
 
   return (
-    <><Navbar /><div>
-      <h1>Community Challenges</h1>
+    <><Navbar /><div id ="communityPage">
+      <h1>Exercise Community</h1>
+      <div id="leaderboard">
+        <h2>Exercise Leaderboard</h2>
+        <img src= "./Assets/ranking.png" width="500"/>
+      </div>
+      <div id="chatboard">
+        <h2>Chat board</h2>
+        <p>
+          <TextBox placeholder="Share a goal"></TextBox>
+        </p>
+        <div class="post">
+          <p>
+          This week I discovered a super cool hack for cleaning! A bucket! Sometimes I can’t tidy and put things away immediately, so I have my basket where I put things. Then I tidy things from the basket when I have time another day.
+          </p>
+        </div>
+        <p>✨  7 sparks | Send a spark</p>
+        <div class="post">
+          <p>
+          This week I discovered a super cool hack for cleaning! A bucket! Sometimes I can’t tidy and put things away immediately, so I have my basket where I put things. Then I tidy things from the basket when I have time another day.
+          </p>
+        </div>
+        <p>✨  7 sparks | Send a spark</p>
+        <div class="post">
+          <p>
+          This week I discovered a super cool hack for cleaning! A bucket! Sometimes I can’t tidy and put things away immediately, so I have my basket where I put things. Then I tidy things from the basket when I have time another day.
+          </p>
+        </div>
+        <p>✨  7 sparks | Send a spark</p>
+        <div class="post">
+          <p>
+          This week I discovered a super cool hack for cleaning! A bucket! Sometimes I can’t tidy and put things away immediately, so I have my basket where I put things. Then I tidy things from the basket when I have time another day.
+          </p>
+        </div>
+        <p>✨  7 sparks | Send a spark</p>
+      </div>
+      <h2>Community Challenges</h2>
       <form onSubmit={(e) => {
         e.preventDefault();
         const text = e.target.elements.challengeText.value;

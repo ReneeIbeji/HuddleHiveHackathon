@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default class textBox extends React.Component{
+export default class TextBox extends React.Component{
     static propTypes = {
         placeholder: PropTypes.string,
     };
