@@ -4,9 +4,10 @@ function Navbar() {
 
 return(
   <div className="navbar">
-    <h1>Tribe </h1>
+    <p>
+      <img src="./Assets/Logo.png"></img>
+    </p>
     <button><Link to="/home">Home</Link></button>
-    <button ><Link to="/goals" >Goals</Link></button>
     <button ><Link to="/community">Community</Link></button>
   </div>
 )
