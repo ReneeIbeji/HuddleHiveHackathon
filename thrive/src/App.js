@@ -5,6 +5,7 @@ import Homepage from './Pages/Homepage.jsx';
 import Goals from './Pages/Goals.jsx';
 import Community from './Pages/Community.jsx';
 import Login from './Pages/Login/Login.js';
+import GoalPopUp from "./Pages/GoalPopUp.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/home" element={<Homepage/>}/>
           <Route path="/goals" element={< Goals/>}/>
           <Route path="/community" element={< Community/>}/>
+          <Route path="/newGoal" element={<GoalPopUp></GoalPopUp>}></Route>
         </Routes>
       </Router>
     </div>
